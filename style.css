@@ -42,18 +42,22 @@ nav {
     z-index: -1;
 }
 
-.canvas .alt {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.canvas:hover .alt {
-    display: inline;
-}
-
-@media screen and (max-width: 2560px) {
+@media screen and (min-width: 1920px) {
+    .canvas {
+        height: 60%;
+        width: 80%;
+        position: relative;
+        object-fit: contain;
+        display: inline-block;
+        border-radius: 10px;
+    }
+    
+    .canvas img {
+        height: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
     .nav-links {
         position: absolute;
         background: #181A18;
@@ -76,20 +80,24 @@ nav {
         opacity: 1;
     }
 
-    .canvas {
-        height: 50%;
-        width: 85%;
-        position: relative;
-        object-fit: contain;
-        display: inline-block;
+    #dream {
+        padding: 10px;
+        position: absolute;
+        font-size: 300px;
+        display: flex;
+        transform: translate(50%, -125%);
+        z-index: 3;
+        color: white;
+        opacity: 0;
+        -webkit-transition: opacity 3s ease-in-out;
+        -moz-transition: opacity 3s ease-in-out;
+        -ms-transition: opacity 3s ease-in-out;
+        -o-transition: opacity 3s ease-in-out;
+        transition: opacity 3s ease-in-out;
     }
-    
-    .canvas img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 10px;
 
+    #dream.fade {
+        opacity: 1;
     }
 
     .container {
@@ -113,77 +121,5 @@ nav {
         margin: 7px;
         border-radius: 10px;
         transform: translate(0%, 100%);
-    }
-}
-
-@media screen and (min-width: 1920px) {
-    .canvas {
-        height: 60%;
-        width: 80%;
-        position: relative;
-        object-fit: contain;
-        display: inline-block;
-    }
-    
-    .canvas img {
-        height: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    .nav-links {
-        position: absolute;
-        background: #181A18;
-        z-index: 2;
-        top: 0;
-        height: 0vh;
-        width: 100%;
-    }
-
-    #link {
-        position: absolute;
-        top: 0;
-        transform: translate(-20%, 50%);
-        z-index: -2;
-    }
-
-    #dream {
-        padding: 10px;
-        position: absolute;
-        font-size: 300px;
-        display: flex;
-        transform: translate(50%, -125%);
-        z-index: 3;
-        color: white;
-        opacity: 0;
-        -webkit-transition: opacity 5s ease-in-out;
-        -moz-transition: opacity 5s ease-in-out;
-        -ms-transition: opacity 5s ease-in-out;
-        -o-transition: opacity 5s ease-in-out;
-        transition: opacity 5s ease-in-out;
-    }
-
-    #dream.fade {
-        opacity: 1;
-    }
-
-    #dream {
-        padding: 10px;
-        position: absolute;
-        font-size: 300px;
-        display: flex;
-        transform: translate(50%, -125%);
-        z-index: 3;
-        color: white;
-        opacity: 0;
-        -webkit-transition: opacity 5s ease-in-out;
-        -moz-transition: opacity 5s ease-in-out;
-        -ms-transition: opacity 5s ease-in-out;
-        -o-transition: opacity 5s ease-in-out;
-        transition: opacity 5s ease-in-out;
-    }
-
-    #dream.fade {
-        opacity: 1;
     }
 }
