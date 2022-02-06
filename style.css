@@ -32,30 +32,43 @@ nav {
     font-size: 32px;
 }
 
-.slider {
+#slider {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 200vh;
+    height: 165vh;
     background: #504f54;
     z-index: -1;
+    opacity: 0;
+    -webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+    transition: opacity 3s ease-in-out;
+
+}
+
+#slider.fade {
+    opacity: 1;
 }
 
 @media screen and (min-width: 1920px) {
     .canvas {
         height: 60%;
-        width: 80%;
+        width: 90%;
         position: relative;
         object-fit: contain;
         display: inline-block;
-        border-radius: 10px;
     }
     
     .canvas img {
-        height: 100%;
-        height: 100%;
+        height: 112%;
+        width: 100%;
         object-fit: cover;
+        align-self: center;
+        border-radius: 20px;
+
     }
     
     .nav-links {
@@ -70,14 +83,21 @@ nav {
     #link {
         position: absolute;
         top: 0;
-        transform: translate(-40%, 35%);
+        transform: translate(-40%, 50%);
         z-index: -2;
-        opacity: 0.5;
         transition: 0.5s;
+        opacity: 0;
+        animation: text .5s ease-out 3s forwards;
+    }
+
+    @keyframes text {
+        100% {
+            opacity: 1;
+        }
     }
     
     #link:hover {
-        opacity: 1;
+        background-color: grey;
     }
 
     #dream {
@@ -89,11 +109,11 @@ nav {
         z-index: 3;
         color: white;
         opacity: 0;
-        -webkit-transition: opacity 3s ease-in-out;
-        -moz-transition: opacity 3s ease-in-out;
-        -ms-transition: opacity 3s ease-in-out;
-        -o-transition: opacity 3s ease-in-out;
-        transition: opacity 3s ease-in-out;
+        -webkit-transition: opacity 6s ease-in-out;
+        -moz-transition: opacity 6s ease-in-out;
+        -ms-transition: opacity 6s ease-in-out;
+        -o-transition: opacity 6s ease-in-out;
+        transition: opacity 6s ease-in-out;
     }
 
     #dream.fade {
@@ -113,13 +133,41 @@ nav {
         font-size: 50px;
         background-color: #181A18;
         height: 400px;
-        width: 400px;
+        width: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
         margin: 7px;
         border-radius: 10px;
-        transform: translate(0%, 100%);
+        transform: translate(120%, 80%);
+    }
+    .BOX_2 {
+        position: absolute;
+        font-size: 50px;
+        background-color: #181A18;
+        height: 400px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin: 7px;
+        border-radius: 10px;
+        transform: translate(0%, 80%);
+    }
+    .BOX_3 {
+        position: absolute;
+        font-size: 50px;
+        background-color: #181A18;
+        height: 400px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin: 7px;
+        border-radius: 10px;
+        transform: translate(-120%, 80%);
     }
 }
