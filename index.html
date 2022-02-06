@@ -6,13 +6,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"
     </head>
     <body>
     
         <header>
             <nav>
-                <img id="hamburger" src="hamburger.png" alt="hamburger" width="50px">
                 <ul class="nav-links">
                     <li><a id="link" href="#">EMAIL</a></li>
                     <li><a id="link" href="#">LINKEDIN</a></li>
@@ -22,15 +23,18 @@
             </nav>
             <section>
                 <div class="canvas">
-                    <img src="sample.jpg" width="1500"">
-                    <img class="alt" src="sample2.jpg" width="1500"
+                    <img src="sample2.jpg" width="1500"">
                 </div>
             </section>
-            <h1 class="dream">dream</h1>
+            <h1 id="dream">dream</h1>
         </header>
 
+        <div class="container">
+            <div class="BOX_1" data-aos="fade-in">DIV 1</div>
+        </div>
+        
         <div class="slider"></div>
-
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" 
         integrity="sha512-lJDBw/vKlGO8aIZB8/6CY4lV+EMAL3qzViHid6wXjH/uDrqUl+uvfCROHXAEL0T/bgdAQHSuE68vRlcFHUdrUw==" 
         crossorigin="anonymous"></script>
@@ -38,6 +42,5 @@
         integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" 
         crossorigin="anonymous"></script>
         <script src="asset.js"></script>
-
     </body>
 </html>

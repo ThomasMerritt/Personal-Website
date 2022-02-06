@@ -2,10 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 section {
@@ -40,7 +37,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     background: #504f54;
     z-index: -1;
 }
@@ -50,7 +47,6 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 99;
 }
 
 .canvas:hover .alt {
@@ -72,6 +68,12 @@ nav {
         top: 0;
         transform: translate(-40%, 35%);
         z-index: -2;
+        opacity: 0.5;
+        transition: 0.5s;
+    }
+    
+    #link:hover {
+        opacity: 1;
     }
 
     .canvas {
@@ -86,17 +88,31 @@ nav {
         height: 100%;
         width: 100%;
         object-fit: cover;
+        border-radius: 10px;
+
     }
 
-    .dream {
-        top: 90%;
-        left: 30%;
-        padding: 10px;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .BOX_1 {
         position: absolute;
-        font-size: 100px;
-        transform: translate(-100%, -140%);
-        z-index: 99;
+        font-size: 50px;
+        background-color: #181A18;
+        height: 400px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: white;
+        margin: 7px;
+        border-radius: 10px;
+        transform: translate(0%, 100%);
     }
 }
 
@@ -115,23 +131,6 @@ nav {
         object-fit: cover;
     }
     
-    #hamburger {
-        grid-column: 2/3;
-        position: absolute;
-        top: 2%;
-        left: 50%;
-        opacity: 0;
-        -webkit-transition: opacity 2s ease-in-out;
-        -moz-transition: opacity 2s ease-in-out;
-        -ms-transition: opacity 2s ease-in-out;
-        -o-transition: opacity 2s ease-in-out;
-        transition: opacity 2s ease-in-out;
-    }
-    
-    #hamburger.fade {
-        opacity: 1;
-    }
-    
     .nav-links {
         position: absolute;
         background: #181A18;
@@ -148,14 +147,43 @@ nav {
         z-index: -2;
     }
 
-    .dream {
-        top: 90%;
-        left: 30%;
+    #dream {
         padding: 10px;
         position: absolute;
-        font-size: 100px;
-        transform: translate(-120%, -150%);
-        z-index: 99;
+        font-size: 300px;
+        display: flex;
+        transform: translate(50%, -125%);
+        z-index: 3;
         color: white;
+        opacity: 0;
+        -webkit-transition: opacity 5s ease-in-out;
+        -moz-transition: opacity 5s ease-in-out;
+        -ms-transition: opacity 5s ease-in-out;
+        -o-transition: opacity 5s ease-in-out;
+        transition: opacity 5s ease-in-out;
+    }
+
+    #dream.fade {
+        opacity: 1;
+    }
+
+    #dream {
+        padding: 10px;
+        position: absolute;
+        font-size: 300px;
+        display: flex;
+        transform: translate(50%, -125%);
+        z-index: 3;
+        color: white;
+        opacity: 0;
+        -webkit-transition: opacity 5s ease-in-out;
+        -moz-transition: opacity 5s ease-in-out;
+        -ms-transition: opacity 5s ease-in-out;
+        -o-transition: opacity 5s ease-in-out;
+        transition: opacity 5s ease-in-out;
+    }
+
+    #dream.fade {
+        opacity: 1;
     }
 }
