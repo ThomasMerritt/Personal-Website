@@ -87,7 +87,7 @@ nav {
         z-index: -2;
         transition: 0.5s;
         opacity: 0;
-        animation: text .5s ease-out 3s forwards;
+        animation: text .5s ease-out 2.5s forwards;
     }
 
     @keyframes text {
