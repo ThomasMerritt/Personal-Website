@@ -45,20 +45,6 @@ nav {
     z-index: -1;
 }
 
-.canvas {
-    height: 60%;
-    width: 80%;
-    position: relative;
-    object-fit: contain;
-    display: inline-block;
-}
-
-.canvas img {
-    height: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .canvas .alt {
     display: none;
     position: absolute;
@@ -71,18 +57,64 @@ nav {
     display: inline;
 }
 
-.dream {
-    top: 90%;
-    left: 30%;
-    padding: 10px;
-    position: absolute;
-    font-size: 100px;
-    transform: translate(-120%, -150%);
-    z-index: 99;
-    color: white;
+@media screen and (max-width: 2560px) {
+    .nav-links {
+        position: absolute;
+        background: #181A18;
+        z-index: 2;
+        top: 0;
+        height: 0vh;
+        width: 100%;
+    }
+
+    #link {
+        position: absolute;
+        top: 0;
+        transform: translate(-40%, 35%);
+        z-index: -2;
+    }
+
+    .canvas {
+        height: 50%;
+        width: 85%;
+        position: relative;
+        object-fit: contain;
+        display: inline-block;
+    }
+    
+    .canvas img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .dream {
+        top: 90%;
+        left: 30%;
+        padding: 10px;
+        position: absolute;
+        font-size: 100px;
+        transform: translate(-100%, -140%);
+        z-index: 99;
+        color: white;
+    }
 }
 
 @media screen and (min-width: 1920px) {
+    .canvas {
+        height: 60%;
+        width: 80%;
+        position: relative;
+        object-fit: contain;
+        display: inline-block;
+    }
+    
+    .canvas img {
+        height: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
     #hamburger {
         grid-column: 2/3;
         position: absolute;
@@ -114,5 +146,16 @@ nav {
         top: 0;
         transform: translate(-20%, 50%);
         z-index: -2;
+    }
+
+    .dream {
+        top: 90%;
+        left: 30%;
+        padding: 10px;
+        position: absolute;
+        font-size: 100px;
+        transform: translate(-120%, -150%);
+        z-index: 99;
+        color: white;
     }
 }
