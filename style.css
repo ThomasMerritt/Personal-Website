@@ -49,6 +49,26 @@ nav {
     font-size: 32px;
 }
 
+#link {
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    transition: 0.5s;
+    opacity: 0;
+    animation: text .5s ease-out 2.5s forwards;
+}
+
+@keyframes text {
+    100% {
+        opacity: 1;
+        
+    }
+}
+
+#link:hover {
+    background-color: grey;
+}
+
 #slider {
     position: absolute;
     top: 0;
@@ -70,12 +90,46 @@ nav {
     opacity: 1;
 }
 
+#dream {
+    padding: 10px;
+    position: absolute;
+    display: flex;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    -webkit-transition: opacity 6s ease-in-out;
+    -moz-transition: opacity 6s ease-in-out;
+    -ms-transition: opacity 6s ease-in-out;
+    -o-transition: opacity 6s ease-in-out;
+    transition: opacity 6s ease-in-out;
+}
+
+#dream.fade {
+    opacity: 1;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     flex-direction: column;
+}
+
+.BOX {
+    position: absolute;
+    background-color: #181A18;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 7px;
+    border-radius: 10px;  
+    transition: 1s; 
+}
+
+.BOX:hover {
+    box-shadow: 0px 0px 500px 0px;
 }
 
 @media screen and (max-width: 1920px) {  
@@ -89,65 +143,22 @@ nav {
     }
 
     #link {
-        position: absolute;
-        top: 0;
         transform: translate(-40%, 50%);
-        z-index: -2;
-        transition: 0.5s;
-        opacity: 0;
-        animation: text .5s ease-out 2.5s forwards;
-    }
-
-    @keyframes text {
-        100% {
-            opacity: 1;
-            
-        }
-    }
-    
-    #link:hover {
-        background-color: grey;
     }
 
     #dream {
-        padding: 10px;
-        position: absolute;
         font-size: 300px;
-        display: flex;
         transform: translate(50%, -125%);
-        z-index: 3;
-        color: white;
-        opacity: 0;
-        -webkit-transition: opacity 6s ease-in-out;
-        -moz-transition: opacity 6s ease-in-out;
-        -ms-transition: opacity 6s ease-in-out;
-        -o-transition: opacity 6s ease-in-out;
-        transition: opacity 6s ease-in-out;
-    }
 
-    #dream.fade {
-        opacity: 1;
     }
 
     .BOX {
-        position: absolute;
         font-size: 50px;
-        background-color: #181A18;
         height: 400px;
         width: 500px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        margin: 7px;
-        border-radius: 10px;
-        transform: translate(0%, 80%);  
-        transition: 1s; 
+        transform: translate(0%, 80%);
     }
 
-    .BOX:hover {
-        box-shadow: 0px 0px 500px 0px;
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -160,23 +171,14 @@ nav {
     }
 
     #dream {
-        position: absolute;
         transform: translate(20%, -125%);
         font-size: 50px;
     }
 
     .BOX {
-        position: absolute;
         font-size: 20px;
-        background-color: #181A18;
         height: 200px;
         width: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        margin: 7px;
-        border-radius: 10px;
         transform: translate(0%, 100%);  
     }
 }
