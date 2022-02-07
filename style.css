@@ -18,6 +18,23 @@ nav {
     align-items: center;
 }
 
+.canvas {
+    height: 60%;
+    width: 90%;
+    position: relative;
+    object-fit: contain;
+    display: inline-block;
+}
+
+.canvas img {
+    height: 112%;
+    width: 100%;
+    object-fit: cover;
+    align-self: center;
+    border-radius: 20px;
+
+}
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -53,24 +70,15 @@ nav {
     opacity: 1;
 }
 
-@media screen and (max-width: 1920px) {
-    .canvas {
-        height: 60%;
-        width: 90%;
-        position: relative;
-        object-fit: contain;
-        display: inline-block;
-    }
-    
-    .canvas img {
-        height: 112%;
-        width: 100%;
-        object-fit: cover;
-        align-self: center;
-        border-radius: 20px;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
 
-    }
-    
+@media screen and (max-width: 1920px) {  
     .nav-links {
         position: absolute;
         background: #181A18;
@@ -121,14 +129,6 @@ nav {
         opacity: 1;
     }
 
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        flex-direction: column;
-    }
-
     .BOX {
         position: absolute;
         font-size: 50px;
@@ -163,13 +163,6 @@ nav {
         position: absolute;
         transform: translate(20%, -125%);
         font-size: 50px;
-    }
-
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
     }
 
     .BOX {
