@@ -129,7 +129,7 @@ nav {
         flex-direction: column;
     }
 
-    .BOX_1 {
+    .BOX {
         position: absolute;
         font-size: 50px;
         background-color: #181A18;
@@ -141,34 +141,11 @@ nav {
         color: white;
         margin: 7px;
         border-radius: 10px;
-        transform: translate(120%, 80%);
+        transform: translate(0%, 80%);  
+        transition: 1s; 
     }
-    .BOX_2 {
-        position: absolute;
-        font-size: 50px;
-        background-color: #181A18;
-        height: 400px;
-        width: 500px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        margin: 7px;
-        border-radius: 10px;
-        transform: translate(0%, 80%);
-    }
-    .BOX_3 {
-        position: absolute;
-        font-size: 50px;
-        background-color: #181A18;
-        height: 400px;
-        width: 500px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        margin: 7px;
-        border-radius: 10px;
-        transform: translate(-120%, 80%);
+
+    .BOX:hover {
+        box-shadow: 0px 0px 500px 0px;
     }
 }
