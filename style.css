@@ -163,11 +163,11 @@ nav {
 
 @media screen and (max-width: 480px) {
     .nav-links li a  {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     #link {
-        transform: translate(-50%, 50%);
+        transform: translate(-50%, 70%);
     }
 
     #dream {
@@ -181,4 +181,62 @@ nav {
         width: 300px;
         transform: translate(0%, 100%);  
     }
+
+    #slider {
+        height: 150vh;
+    }
 }
+
+@media (min-width: 540px) and (max-width: 1000px){
+    .nav-links li a  {
+        font-size: 30px;
+    }
+
+    #link {
+        transform: translate(-50%, 70%);
+    }
+
+    #dream {
+        transform: translate(40%, -125%);
+        font-size: 70px;
+    }
+
+    .BOX {
+        font-size: 20px;
+        height: 200px;
+        width: 300px;
+        transform: translate(0%, 100%);  
+    }
+
+    #slider {
+        height: 150vh;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .nav-links li a  {
+        font-size: 30px;
+    }
+
+    #link {
+        transform: translate(-50%, 40%);
+    }
+
+    #dream {
+        transform: translate(40%, -125%);
+        font-size: 70px;
+    }
+
+    .BOX {
+        font-size: 20px;
+        height: 200px;
+        width: 300px;
+        transform: translate(0%, 100%);  
+    }
+
+    #slider {
+        height: 150vh;
+    }
+}
+
+    
