@@ -43,15 +43,14 @@ nav {
     position: absolute;
     z-index: 2;
     top: 0;
-    align-self: center;
     justify-content: space-around;
-    height: 0vh;
+    height: 0%;
     animation: nav 10s forwards;
 }
 
 @keyframes nav {
     100% {
-        min-height: 60px;
+        min-height: 54px;
         
     }
 }
@@ -60,13 +59,12 @@ nav {
 .nav-links li a {
     color: white;
     text-decoration: none;
-    font-size: 32px;
 }
 
 #link {
     position: absolute;
     top: 0;
-    z-index: -2;
+    z-index: 2;
     transition: 0.5s;
     opacity: 0;
     animation: text .5s ease-out 2.5s forwards;
@@ -104,21 +102,20 @@ nav {
     opacity: 1;
 }
 
-#dream {
+#caption {
     padding: 10px;
     position: absolute;
-    display: flex;
-    z-index: 1;
+    z-index: 2;
     color: white;
     opacity: 0;
-    -webkit-transition: opacity 6s ease-in-out;
-    -moz-transition: opacity 6s ease-in-out;
-    -ms-transition: opacity 6s ease-in-out;
-    -o-transition: opacity 6s ease-in-out;
-    transition: opacity 6s ease-in-out;
+    -webkit-transition: opacity 8.5s ease-in-out;
+    -moz-transition: opacity 8.5s ease-in-out;
+    -ms-transition: opacity 8.5s ease-in-out;
+    -o-transition: opacity 8.5s ease-in-out;
+    transition: opacity 8.5s ease-in-out;
 }
 
-#dream.fade {
+#caption.fade {
     opacity: 1;
 }
 
@@ -146,20 +143,33 @@ nav {
     box-shadow: 0px 0px 500px 0px;
 }
 
-@media screen and (max-height: 540px) {
-    #slider {
-        height: 300vh;
+@media (max-height: 350px) {
+    * {
+        background-color: #504f54;
+    }
+
+    .BOX {
+        opacity: 0;
+    }
+
+    #caption {
+        z-index: -5;
     }
 }
 
-@media screen and (max-width: 1920px) {  
-    #link {
-        transform: translate(-40%, 50%);
+@media screen {  
+    .nav-links li a  {
+        font-size: 32px;
     }
 
-    #dream {
-        font-size: 300px;
+    #link {
+        transform: translate(-50%, 50%);
+    }
+
+    #caption {
+        font-size: 130px;
         transform: translate(50%, -125%);
+        margin-left: 3%;
 
     }
 
@@ -178,10 +188,10 @@ nav {
     }
 
     #link {
-        transform: translate(-50%, 70%);
+        transform: translate(-50%,70%);
     }
 
-    #dream {
+    #caption {
         transform: translate(20%, -125%);
         font-size: 50px;
     }
@@ -189,25 +199,25 @@ nav {
     .BOX {
         font-size: 20px;
         height: 200px;
-        width: 300px;
+        width: 250px;
         transform: translate(0%, 100%);  
     }
 
     #slider {
-        height: 150vh;
+        height: 180vh;
     }
 }
 
-@media (min-width: 540px) and (max-width: 1023px){
+@media (min-width: 481px) and (max-width: 768px){
     .nav-links li a  {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     #link {
-        transform: translate(-50%, 70%);
+        transform: translate(-50%, 50%);
     }
 
-    #dream {
+    #caption {
         transform: translate(40%, -125%);
         font-size: 70px;
     }
@@ -220,11 +230,37 @@ nav {
     }
 
     #slider {
-        height: 150vh;
+        height: 180vh;
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1280px) {
+@media (min-width: 769px) and (max-width: 999px) {
+    .nav-links li a  {
+        font-size: 25px;
+    }
+
+    #link {
+        transform: translate(-50%, 50%);
+    }
+
+    #caption {
+        transform: translate(40%, -125%);
+        font-size: 70px;
+    }
+
+    .BOX {
+        font-size: 20px;
+        height: 200px;
+        width: 300px;
+        transform: translate(0%, 100%);  
+    }
+
+    #slider {
+        height: 180vh;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1280px) {
     .nav-links li a  {
         font-size: 30px;
     }
@@ -233,7 +269,7 @@ nav {
         transform: translate(-50%, 40%);
     }
 
-    #dream {
+    #caption {
         transform: translate(40%, -125%);
         font-size: 70px;
     }
@@ -246,7 +282,7 @@ nav {
     }
 
     #slider {
-        height: 150vh;
+        height: 180vh;
     }
 }
 
