@@ -149,7 +149,7 @@ nav {
     background: #010305;
 }
 
-@media (max-height: 350px) {
+@media (max-height: 300px) {
     * {
         background-color: #08172A;
     }
