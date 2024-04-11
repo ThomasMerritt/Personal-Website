@@ -5,6 +5,10 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+body {
+    overflow: hidden;
+}
+
 section {
     display: flex;
     height: 80vh;
@@ -179,12 +183,12 @@ nav {
 
     }
 
-    .BOX {
+    /* .BOX {
         font-size: 50px;
         height: 400px;
         width: 500px;
         transform: translate(0%, 80%);
-    }
+    } */
 
 }
 
@@ -202,12 +206,12 @@ nav {
         font-size: 50px;
     }
 
-    .BOX {
+    /* .BOX {
         font-size: 20px;
         height: 200px;
         width: 250px;
         transform: translate(0%, 100%);  
-    }
+    } */
 
     #slider {
         height: 180vh;
@@ -228,12 +232,12 @@ nav {
         font-size: 70px;
     }
 
-    .BOX {
+    /* .BOX {
         font-size: 20px;
         height: 200px;
         width: 300px;
         transform: translate(0%, 100%);  
-    }
+    } */
 
     #slider {
         height: 180vh;
@@ -254,12 +258,12 @@ nav {
         font-size: 70px;
     }
 
-    .BOX {
+    /* .BOX {
         font-size: 20px;
         height: 200px;
         width: 300px;
         transform: translate(0%, 100%);  
-    }
+    } */
 
     #slider {
         height: 180vh;
@@ -280,12 +284,12 @@ nav {
         font-size: 70px;
     }
 
-    .BOX {
+    /* .BOX {
         font-size: 20px;
         height: 200px;
         width: 300px;
         transform: translate(0%, 100%);  
-    }
+    } */
 
     #slider {
         height: 180vh;
