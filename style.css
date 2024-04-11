@@ -105,11 +105,11 @@ nav {
     z-index: 2;
     color: white;
     opacity: 0;
-    -webkit-transition: opacity 8.5s ease-in-out;
-    -moz-transition: opacity 8.5s ease-in-out;
-    -ms-transition: opacity 8.5s ease-in-out;
-    -o-transition: opacity 8.5s ease-in-out;
-    transition: opacity 8.5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
 }
 
 #caption.fade {
