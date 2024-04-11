@@ -5,14 +5,14 @@ let slider = document.getElementById('slider');
 const tl = new TimelineMax();
 
 const positivity = [
-    "you're cool ;)",
+    "こんにちは",
     "stay frosty",
     "i'm here",
     "hola",
-    "i'm coding :D",
+    "good day!",
     '<3',
-    '(╯°□°)╯︵ ┻━┻',
-    '┬─┬ノ( º _ ºノ)'
+    '(╯°□°)╯',
+    'ノ( º _ ºノ)'
 
 ];
 
