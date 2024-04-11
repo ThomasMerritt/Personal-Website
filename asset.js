@@ -5,15 +5,14 @@ let slider = document.getElementById('slider');
 const tl = new TimelineMax();
 
 const positivity = [
-    "you're cool ;)",
+    "こんにちは",
     "stay frosty",
     "i'm here",
     "hola",
-    "i'm coding :D",
+    "good day!",
     '<3',
-    '(╯°□°)╯︵ ┻━┻',
-    '┬─┬ノ( º _ ºノ)'
-
+    '(╯°□°)╯',
+    'ノ( º _ ºノ)'
 ];
 
 tl.fromTo(canvas,2, {height: "0%"}, {height: "80%", ease: Power3.easeInOut})
