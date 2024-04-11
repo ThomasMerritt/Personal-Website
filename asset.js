@@ -13,7 +13,6 @@ const positivity = [
     '<3',
     '(╯°□°)╯',
     'ノ( º _ ºノ)'
-
 ];
 
 tl.fromTo(canvas,2, {height: "0%"}, {height: "80%", ease: Power3.easeInOut})
